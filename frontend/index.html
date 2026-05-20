@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeautyBook — Randevu Yönetimi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape--1"></div>
+    <div class="bg-shape bg-shape--2"></div>
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true">✦</span>
+        <div>
+          <h1 class="brand__title">BeautyBook</h1>
+          <p class="brand__tagline">Kuaför &amp; güzellik salonu randevuları</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <p id="info" class="info-banner" role="status"></p>
+      <div id="toast" class="toast hidden" role="alert"></div>
+
+      <section id="authSection" class="panel"></section>
+      <section id="appSection" class="panel hidden"></section>
+    </main>
+
+    <div id="editModal" class="modal hidden" aria-hidden="true">
+      <div class="modal__backdrop" id="editModalBackdrop"></div>
+      <div class="modal__panel" role="dialog" aria-labelledby="editModalTitle">
+        <h3 id="editModalTitle" class="modal__title">Randevu Düzenle</h3>
+        <div id="editForm"></div>
+        <div class="form-actions modal__actions">
+          <button type="button" id="editCancelBtn" class="btn btn--ghost">İptal</button>
+          <button type="button" id="editSaveBtn" class="btn btn--primary">Kaydet</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span>Sistem Analizi ve Tasarımı — BeautyBook</span>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
